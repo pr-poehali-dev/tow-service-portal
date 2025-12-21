@@ -422,6 +422,14 @@ export default function Index() {
           </div>
         </div>
       </footer>
+
+      <a 
+        href="tel:+79261831000" 
+        className="fixed bottom-6 right-6 z-50 bg-primary hover:bg-primary/90 text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110 animate-pulse"
+        aria-label="Позвонить"
+      >
+        <Icon name="Phone" size={28} />
+      </a>
     </div>
   );
 }
