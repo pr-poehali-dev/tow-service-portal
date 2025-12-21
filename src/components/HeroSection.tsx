@@ -12,7 +12,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-white space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              Эвакуатор в Москве 24/7 — Быстро и Надёжно
+              Вызвать эвакуатор 24/7 — Быстро и Надёжно
             </h1>
             <p className="text-xl text-white/90">
               Работаем круглосуточно. Прибытие за 20-30 минут. Опытные водители. Современная техника.
