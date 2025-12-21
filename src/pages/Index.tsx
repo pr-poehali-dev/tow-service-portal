@@ -423,13 +423,24 @@ export default function Index() {
         </div>
       </footer>
 
-      <a 
-        href="tel:+79261831000" 
-        className="fixed bottom-6 right-6 z-50 bg-primary hover:bg-primary/90 text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110 animate-pulse"
-        aria-label="Позвонить"
-      >
-        <Icon name="Phone" size={28} />
-      </a>
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a 
+          href="https://wa.me/79261831000" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110"
+          aria-label="WhatsApp"
+        >
+          <Icon name="MessageCircle" size={28} />
+        </a>
+        <a 
+          href="tel:+79261831000" 
+          className="bg-primary hover:bg-primary/90 text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110 animate-pulse"
+          aria-label="Позвонить"
+        >
+          <Icon name="Phone" size={28} />
+        </a>
+      </div>
     </div>
   );
 }
