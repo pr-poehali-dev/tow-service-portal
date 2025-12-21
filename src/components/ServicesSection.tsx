@@ -22,8 +22,8 @@ export default function ServicesSection() {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Icon name="Truck" size={48} className="text-primary mb-4" />
-                <CardTitle>Эвакуация грузовых авто</CardTitle>
-                <CardDescription>Специализированные эвакуаторы для грузовых автомобилей и спецтехники</CardDescription>
+                <CardTitle>Перевозка автомобилей на крытом эвакуаторе</CardTitle>
+                <CardDescription>Специализированные эвакуаторы закрытого типа для ретро автомобилей, спецтехники и спортивного инвентаря (багги, мотоциклы)</CardDescription>
               </CardHeader>
             </Card>
             <Card className="hover:shadow-lg transition-shadow">
