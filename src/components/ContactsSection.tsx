@@ -28,7 +28,7 @@ export default function ContactsSection() {
                   <Icon name="MapPin" size={24} className="text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Адрес</h3>
-                    <p className="text-white/90">г. Москва, ул. Примерная, д. 123</p>
+                    <p className="text-white/90">Союз эвакуаторов России</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
