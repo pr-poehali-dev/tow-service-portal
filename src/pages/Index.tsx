@@ -351,7 +351,7 @@ export default function Index() {
                   <Icon name="Phone" size={24} className="text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Телефон</h3>
-                    <p className="text-white/90 text-xl">+7 (999) 123-45-67</p>
+                    <p className="text-white/90 text-xl">+7 (926) 183-10-00</p>
                     <p className="text-white/70 text-sm">Круглосуточно, без выходных</p>
                   </div>
                 </div>
