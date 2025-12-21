@@ -46,12 +46,12 @@ export default function Index() {
         </div>
       </header>
 
-      <section id="home" className="pt-24 pb-16 bg-gradient-to-br from-secondary via-secondary/90 to-primary">
+      <section id="home" className="pt-24 pb-16 bg-gradient-to-br from-secondary via-secondary/90 to-primary" aria-label="Главная страница">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-white space-y-6">
               <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-                Быстрая и надежная эвакуация автомобилей
+                Эвакуатор в Москве 24/7 — Быстро и Надёжно
               </h1>
               <p className="text-xl text-white/90">
                 Работаем круглосуточно. Прибытие за 20-30 минут. Опытные водители. Современная техника.
@@ -83,15 +83,18 @@ export default function Index() {
             <div className="hidden md:block">
               <img 
                 src="https://cdn.poehali.dev/projects/93bf9bc9-b4bd-4203-8b44-15199a552ff4/files/9281237e-c4d7-4478-bbbf-583c4017422e.jpg" 
-                alt="Эвакуатор" 
+                alt="Эвакуатор Москва круглосуточно - профессиональная эвакуация автомобилей" 
                 className="rounded-lg shadow-2xl"
+                loading="eager"
+                width="800"
+                height="600"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section id="services" className="py-20 bg-muted">
+      <section id="services" className="py-20 bg-muted" aria-label="Услуги эвакуации">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-secondary mb-4">Наши услуги</h2>
@@ -144,7 +147,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-20 bg-white" aria-label="О компании">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -212,7 +215,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="pricing" className="py-20 bg-muted">
+      <section id="pricing" className="py-20 bg-muted" aria-label="Цены на эвакуацию">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-secondary mb-4">Прайс-лист</h2>
@@ -289,7 +292,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="order" className="py-20 bg-white">
+      <section id="order" className="py-20 bg-white" aria-label="Форма заказа эвакуатора">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-12">
@@ -341,7 +344,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="contacts" className="py-20 bg-secondary text-white">
+      <section id="contacts" className="py-20 bg-secondary text-white" aria-label="Контакты">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
