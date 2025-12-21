@@ -1,20 +1,8 @@
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import Icon from '@/components/ui/icon';
 
-interface ServicesSectionProps {
-  formData: {
-    address: string;
-    carModel: string;
-    problem: string;
-  };
-  setFormData: (data: { address: string; carModel: string; problem: string }) => void;
-  handleSubmit: (e: React.FormEvent) => void;
-}
-
-export default function ServicesSection({ formData, setFormData, handleSubmit }: ServicesSectionProps) {
+export default function ServicesSection() {
   return (
     <>
       <section id="services" className="py-20 bg-muted" aria-label="Услуги эвакуации">
@@ -215,54 +203,55 @@ export default function ServicesSection({ formData, setFormData, handleSubmit }:
         </div>
       </section>
 
-      <section id="order" className="py-20 bg-white" aria-label="Форма заказа эвакуатора">
+      <section id="order" className="py-20 bg-gradient-to-br from-primary via-primary to-secondary" aria-label="Связаться с нами">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-secondary mb-4">Заказать эвакуатор</h2>
-              <p className="text-muted-foreground text-lg">Заполните форму, и мы свяжемся с вами в течение 2 минут</p>
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Нужен эвакуатор?</h2>
+            <p className="text-white/90 text-xl mb-12">Свяжитесь с нами любым удобным способом — работаем круглосуточно!</p>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <a 
+                href="tel:+79261831000"
+                className="group"
+              >
+                <Card className="h-full hover:shadow-2xl transition-all duration-300 hover:scale-105 bg-white border-2 border-transparent hover:border-white">
+                  <CardContent className="p-8 text-center">
+                    <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                      <Icon name="Phone" size={40} className="text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-secondary mb-2">Позвонить</h3>
+                    <p className="text-3xl font-bold text-primary mb-3">+7 (926) 183-10-00</p>
+                    <p className="text-muted-foreground">Звоните прямо сейчас</p>
+                  </CardContent>
+                </Card>
+              </a>
+
+              <a 
+                href="https://wa.me/79261831000"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group"
+              >
+                <Card className="h-full hover:shadow-2xl transition-all duration-300 hover:scale-105 bg-white border-2 border-transparent hover:border-white">
+                  <CardContent className="p-8 text-center">
+                    <div className="bg-[#25D366]/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:bg-[#25D366]/20 transition-colors">
+                      <Icon name="MessageCircle" size={40} className="text-[#25D366]" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-secondary mb-2">WhatsApp</h3>
+                    <p className="text-xl font-semibold text-[#25D366] mb-3">Написать в мессенджер</p>
+                    <p className="text-muted-foreground">Ответим моментально</p>
+                  </CardContent>
+                </Card>
+              </a>
             </div>
-            <Card>
-              <CardContent className="p-8">
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Адрес подачи эвакуатора *</label>
-                    <Input 
-                      placeholder="Укажите точный адрес или ближайший ориентир"
-                      value={formData.address}
-                      onChange={(e) => setFormData({...formData, address: e.target.value})}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Марка и модель автомобиля *</label>
-                    <Input 
-                      placeholder="Например: Toyota Camry"
-                      value={formData.carModel}
-                      onChange={(e) => setFormData({...formData, carModel: e.target.value})}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Описание проблемы *</label>
-                    <Textarea 
-                      placeholder="Опишите ситуацию: поломка, ДТП, застрял в грязи и т.д."
-                      rows={4}
-                      value={formData.problem}
-                      onChange={(e) => setFormData({...formData, problem: e.target.value})}
-                      required
-                    />
-                  </div>
-                  <Button type="submit" size="lg" className="w-full">
-                    <Icon name="Send" size={20} className="mr-2" />
-                    Отправить заявку
-                  </Button>
-                  <p className="text-sm text-muted-foreground text-center">
-                    Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных
-                  </p>
-                </form>
-              </CardContent>
-            </Card>
+
+            <div className="mt-12 bg-white/10 backdrop-blur-sm rounded-lg p-6 text-white">
+              <div className="flex items-center justify-center space-x-3 mb-3">
+                <Icon name="Clock" size={24} />
+                <span className="text-lg font-semibold">Работаем круглосуточно без выходных</span>
+              </div>
+              <p className="text-white/80">Среднее время прибытия: 20-30 минут</p>
+            </div>
           </div>
         </div>
       </section>
