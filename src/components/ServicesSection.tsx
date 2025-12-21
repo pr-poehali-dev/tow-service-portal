@@ -15,8 +15,8 @@ export default function ServicesSection() {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Icon name="Car" size={48} className="text-primary mb-4" />
-                <CardTitle>Эвакуация легковых авто</CardTitle>
-                <CardDescription>Быстрая и безопасная транспортировка легковых автомобилей любых марок</CardDescription>
+                <CardTitle>Эвакуация легковых авто и джипа</CardTitle>
+                <CardDescription>Быстрая и безопасная транспортировка легковых автомобилей любых марок и джипов</CardDescription>
               </CardHeader>
             </Card>
             <Card className="hover:shadow-lg transition-shadow">
