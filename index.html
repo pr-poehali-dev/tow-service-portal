@@ -91,7 +91,69 @@
             "priceCurrency": "RUB"
           }
         ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "3",
+        "bestRating": "5",
+        "worstRating": "1"
       }
+    }
+    </script>
+    
+    <!-- Reviews Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "Review",
+          "position": 1,
+          "author": {
+            "@type": "Person",
+            "name": "Александр М."
+          },
+          "datePublished": "2024-12-15",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Машина сломалась ночью на МКАД. Приехали за 25 минут, погрузили аккуратно. Водитель профессионал, помог с документами. Цена как договаривались, без доплат. Рекомендую!"
+        },
+        {
+          "@type": "Review",
+          "position": 2,
+          "author": {
+            "@type": "Person",
+            "name": "Елена К."
+          },
+          "datePublished": "2024-12-10",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "После ДТП нужен был срочно эвакуатор. Позвонила, приехали быстро, погрузили очень аккуратно. Спасибо за помощь в трудную минуту. Сервис на высоте!"
+        },
+        {
+          "@type": "Review",
+          "position": 3,
+          "author": {
+            "@type": "Person",
+            "name": "Дмитрий П."
+          },
+          "datePublished": "2024-12-05",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Отличная служба! Нужно было перевезти авто на дальнее расстояние. Приехали вовремя, машину довезли в целости. Цены адекватные. Буду обращаться еще."
+        }
+      ]
     }
     </script>
 

@@ -344,6 +344,83 @@ export default function Index() {
         </div>
       </section>
 
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-secondary mb-4">Отзывы клиентов</h2>
+            <p className="text-muted-foreground text-lg">Что говорят о нас наши клиенты</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="hover:shadow-lg transition-shadow" itemScope itemType="https://schema.org/Review">
+              <CardHeader>
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={18} className="text-yellow-400 fill-yellow-400" />
+                    ))}
+                  </div>
+                  <meta itemProp="ratingValue" content="5" />
+                </div>
+                <CardTitle itemProp="author" itemScope itemType="https://schema.org/Person">
+                  <span itemProp="name">Александр М.</span>
+                </CardTitle>
+                <CardDescription className="text-sm text-muted-foreground" itemProp="datePublished" content="2024-12-15">15 декабря 2024</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground" itemProp="reviewBody">
+                  Машина сломалась ночью на МКАД. Приехали за 25 минут, погрузили аккуратно. 
+                  Водитель профессионал, помог с документами. Цена как договаривались, без доплат. Рекомендую!
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow" itemScope itemType="https://schema.org/Review">
+              <CardHeader>
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={18} className="text-yellow-400 fill-yellow-400" />
+                    ))}
+                  </div>
+                  <meta itemProp="ratingValue" content="5" />
+                </div>
+                <CardTitle itemProp="author" itemScope itemType="https://schema.org/Person">
+                  <span itemProp="name">Елена К.</span>
+                </CardTitle>
+                <CardDescription className="text-sm text-muted-foreground" itemProp="datePublished" content="2024-12-10">10 декабря 2024</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground" itemProp="reviewBody">
+                  После ДТП нужен был срочно эвакуатор. Позвонила, приехали быстро, погрузили очень аккуратно. 
+                  Спасибо за помощь в трудную минуту. Сервис на высоте!
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow" itemScope itemType="https://schema.org/Review">
+              <CardHeader>
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Icon key={i} name="Star" size={18} className="text-yellow-400 fill-yellow-400" />
+                    ))}
+                  </div>
+                  <meta itemProp="ratingValue" content="5" />
+                </div>
+                <CardTitle itemProp="author" itemScope itemType="https://schema.org/Person">
+                  <span itemProp="name">Дмитрий П.</span>
+                </CardTitle>
+                <CardDescription className="text-sm text-muted-foreground" itemProp="datePublished" content="2024-12-05">5 декабря 2024</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground" itemProp="reviewBody">
+                  Отличная служба! Нужно было перевезти авто на дальнее расстояние. Приехали вовремя, 
+                  машину довезли в целости. Цены адекватные. Буду обращаться еще.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section id="contacts" className="py-20 bg-secondary text-white" aria-label="Контакты">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
