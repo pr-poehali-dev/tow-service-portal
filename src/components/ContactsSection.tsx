@@ -21,7 +21,7 @@ export default function ContactsSection() {
                   <Icon name="Mail" size={24} className="text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
-                    <p className="text-white/90">info@evakuator24.ru</p>
+                    <p className="text-white/90">79261831000@mail.ru</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
