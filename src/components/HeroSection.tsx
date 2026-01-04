@@ -45,10 +45,12 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
             <img 
               src="https://cdn.poehali.dev/projects/93bf9bc9-b4bd-4203-8b44-15199a552ff4/files/37d98ee8-dbb7-407d-b16f-b305ed72af7f.jpg" 
               alt="Эвакуатор для легковых автомобилей Москва - профессиональная эвакуация седанов и хэтчбеков" 
-              className="rounded-lg shadow-2xl"
+              className="rounded-lg shadow-2xl w-full h-auto"
               loading="eager"
+              fetchpriority="high"
               width="800"
               height="600"
+              decoding="async"
             />
           </div>
         </div>

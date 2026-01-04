@@ -90,7 +90,7 @@ export default function ContactsSection() {
           href="https://t.me/+79261831000" 
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#0088cc] hover:bg-[#006699] text-white rounded-full p-3 sm:p-4 shadow-2xl transition-all duration-300 hover:scale-110"
+          className="bg-[#0088cc] hover:bg-[#006699] text-white rounded-full p-3 sm:p-4 shadow-2xl transition-transform duration-200 hover:scale-110 will-change-transform"
           aria-label="Telegram"
         >
           <Icon name="Send" className="w-6 h-6 sm:w-7 sm:h-7" />
@@ -99,14 +99,14 @@ export default function ContactsSection() {
           href="https://wa.me/79939177624" 
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-3 sm:p-4 shadow-2xl transition-all duration-300 hover:scale-110"
+          className="bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-3 sm:p-4 shadow-2xl transition-transform duration-200 hover:scale-110 will-change-transform"
           aria-label="WhatsApp"
         >
           <Icon name="MessageCircle" className="w-6 h-6 sm:w-7 sm:h-7" />
         </a>
         <a 
           href="tel:+79939177624" 
-          className="bg-primary hover:bg-primary/90 text-white rounded-full p-3 sm:p-4 shadow-2xl transition-all duration-300 hover:scale-110 animate-pulse"
+          className="bg-primary hover:bg-primary/90 text-white rounded-full p-3 sm:p-4 shadow-2xl transition-transform duration-200 hover:scale-110 animate-pulse will-change-transform"
           aria-label="Позвонить"
         >
           <Icon name="Phone" className="w-6 h-6 sm:w-7 sm:h-7" />
