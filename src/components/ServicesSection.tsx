@@ -211,7 +211,7 @@ export default function ServicesSection() {
             
             <div className="grid md:grid-cols-2 gap-6">
               <a 
-                href="tel:+79261831000"
+                href="tel:+79939177624"
                 className="group"
               >
                 <Card className="h-full hover:shadow-2xl transition-all duration-300 hover:scale-105 bg-white border-2 border-transparent hover:border-white">
@@ -220,14 +220,14 @@ export default function ServicesSection() {
                       <Icon name="Phone" size={40} className="text-primary" />
                     </div>
                     <h3 className="text-2xl font-bold text-secondary mb-2">Позвонить</h3>
-                    <p className="text-3xl font-bold text-primary mb-3">+7 (926) 183-10-00</p>
+                    <p className="text-3xl font-bold text-primary mb-3">+7 (993) 917-76-24</p>
                     <p className="text-muted-foreground">Звоните прямо сейчас</p>
                   </CardContent>
                 </Card>
               </a>
 
               <a 
-                href="https://wa.me/79261831000"
+                href="https://wa.me/79939177624"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group"

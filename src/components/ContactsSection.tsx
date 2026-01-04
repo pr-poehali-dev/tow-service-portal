@@ -13,7 +13,7 @@ export default function ContactsSection() {
                   <Icon name="Phone" size={24} className="text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Телефон</h3>
-                    <p className="text-white/90 text-xl">+7 (926) 183-10-00</p>
+                    <p className="text-white/90 text-xl">+7 (993) 917-76-24</p>
                     <p className="text-white/70 text-sm">Круглосуточно, без выходных</p>
                   </div>
                 </div>
@@ -21,7 +21,7 @@ export default function ContactsSection() {
                   <Icon name="Mail" size={24} className="text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
-                    <p className="text-white/90">79261831000@mail.ru</p>
+                    <p className="text-white/90">79939177624@mail.ru</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -87,7 +87,7 @@ export default function ContactsSection() {
 
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
         <a 
-          href="https://wa.me/79261831000" 
+          href="https://wa.me/79939177624" 
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110"
@@ -96,7 +96,7 @@ export default function ContactsSection() {
           <Icon name="MessageCircle" size={28} />
         </a>
         <a 
-          href="tel:+79261831000" 
+          href="tel:+79939177624" 
           className="bg-primary hover:bg-primary/90 text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110 animate-pulse"
           aria-label="Позвонить"
         >
