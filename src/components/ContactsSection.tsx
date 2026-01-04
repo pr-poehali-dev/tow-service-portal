@@ -87,6 +87,15 @@ export default function ContactsSection() {
 
       <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
         <a 
+          href="https://t.me/+79261831000" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#0088cc] hover:bg-[#006699] text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110"
+          aria-label="Telegram"
+        >
+          <Icon name="Send" size={28} />
+        </a>
+        <a 
           href="https://wa.me/79939177624" 
           target="_blank"
           rel="noopener noreferrer"
