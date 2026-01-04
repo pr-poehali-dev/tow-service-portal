@@ -11,8 +11,8 @@ export default function Header({ scrollToSection }: HeaderProps) {
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Icon name="Truck" size={32} className="text-primary" />
-            <span className="text-2xl font-bold text-secondary">Эвакуатор 24/7</span>
+            <Icon name="Truck" className="text-primary w-6 h-6 sm:w-8 sm:h-8" />
+            <span className="text-lg sm:text-xl md:text-2xl font-bold text-secondary">Эвакуатор 24/7</span>
           </div>
           <div className="hidden md:flex space-x-8">
             <button onClick={() => scrollToSection('home')} className="text-foreground hover:text-primary transition-colors font-medium">Главная</button>

@@ -7,13 +7,13 @@ export default function ContactsSection() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-4xl font-bold mb-6">Контакты</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">Контакты</h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <Icon name="Phone" size={24} className="text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Телефон</h3>
-                    <p className="text-white/90 text-xl">+7 (993) 917-76-24</p>
+                    <p className="text-white/90 text-lg sm:text-xl break-all">+7 (993) 917-76-24</p>
                     <p className="text-white/70 text-sm">Круглосуточно, без выходных</p>
                   </div>
                 </div>
@@ -21,7 +21,7 @@ export default function ContactsSection() {
                   <Icon name="Mail" size={24} className="text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
-                    <p className="text-white/90">79939177624@mail.ru</p>
+                    <p className="text-white/90 text-sm sm:text-base break-all">79939177624@mail.ru</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -41,7 +41,7 @@ export default function ContactsSection() {
               </div>
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-6">Почему выбирают нас</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-6">Почему выбирают нас</h3>
               <ul className="space-y-4">
                 <li className="flex items-start space-x-3">
                   <Icon name="CheckCircle2" className="text-primary mt-1" size={20} />
@@ -85,31 +85,31 @@ export default function ContactsSection() {
         </div>
       </footer>
 
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+      <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col gap-2 sm:gap-3">
         <a 
           href="https://t.me/+79261831000" 
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#0088cc] hover:bg-[#006699] text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110"
+          className="bg-[#0088cc] hover:bg-[#006699] text-white rounded-full p-3 sm:p-4 shadow-2xl transition-all duration-300 hover:scale-110"
           aria-label="Telegram"
         >
-          <Icon name="Send" size={28} />
+          <Icon name="Send" className="w-6 h-6 sm:w-7 sm:h-7" />
         </a>
         <a 
           href="https://wa.me/79939177624" 
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110"
+          className="bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-3 sm:p-4 shadow-2xl transition-all duration-300 hover:scale-110"
           aria-label="WhatsApp"
         >
-          <Icon name="MessageCircle" size={28} />
+          <Icon name="MessageCircle" className="w-6 h-6 sm:w-7 sm:h-7" />
         </a>
         <a 
           href="tel:+79939177624" 
-          className="bg-primary hover:bg-primary/90 text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110 animate-pulse"
+          className="bg-primary hover:bg-primary/90 text-white rounded-full p-3 sm:p-4 shadow-2xl transition-all duration-300 hover:scale-110 animate-pulse"
           aria-label="Позвонить"
         >
-          <Icon name="Phone" size={28} />
+          <Icon name="Phone" className="w-6 h-6 sm:w-7 sm:h-7" />
         </a>
       </div>
     </>

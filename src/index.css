@@ -93,6 +93,18 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (max-width: 640px) {
+    .container {
+      @apply px-4;
+    }
   }
 
   h1,

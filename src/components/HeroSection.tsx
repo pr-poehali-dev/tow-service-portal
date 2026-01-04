@@ -11,10 +11,10 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-white space-y-6">
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
               Вызвать эвакуатор 24/7 — Быстро и Надёжно
             </h1>
-            <p className="text-xl text-white/90">
+            <p className="text-base sm:text-lg md:text-xl text-white/90">
               Работаем круглосуточно. Прибытие за 20-30 минут. Опытные водители. Современная техника.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -26,18 +26,18 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
                 Узнать цены
               </Button>
             </div>
-            <div className="flex gap-8 pt-4">
+            <div className="grid grid-cols-3 gap-4 pt-4">
               <div>
-                <div className="text-3xl font-bold">24/7</div>
-                <div className="text-white/80">Круглосуточно</div>
+                <div className="text-2xl sm:text-3xl font-bold">24/7</div>
+                <div className="text-xs sm:text-sm text-white/80">Круглосуточно</div>
               </div>
               <div>
-                <div className="text-3xl font-bold">20 мин</div>
-                <div className="text-white/80">Среднее время</div>
+                <div className="text-2xl sm:text-3xl font-bold">20 мин</div>
+                <div className="text-xs sm:text-sm text-white/80">Среднее время</div>
               </div>
               <div>
-                <div className="text-3xl font-bold">1500+</div>
-                <div className="text-white/80">Выполнено заказов</div>
+                <div className="text-2xl sm:text-3xl font-bold">1500+</div>
+                <div className="text-xs sm:text-sm text-white/80">Выполнено заказов</div>
               </div>
             </div>
           </div>

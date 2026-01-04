@@ -8,10 +8,10 @@ export default function ServicesSection() {
       <section id="services" className="py-20 bg-muted" aria-label="Услуги эвакуации">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-secondary mb-4">Наши услуги</h2>
-            <p className="text-muted-foreground text-lg">Полный спектр эвакуационных услуг для любых ситуаций</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-secondary mb-4">Наши услуги</h2>
+            <p className="text-muted-foreground text-base sm:text-lg">Полный спектр эвакуационных услуг для любых ситуаций</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Icon name="Car" size={48} className="text-primary mb-4" />
@@ -62,8 +62,8 @@ export default function ServicesSection() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-secondary mb-6">О компании</h2>
-              <p className="text-lg text-muted-foreground mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-secondary mb-6">О компании</h2>
+              <p className="text-base sm:text-lg text-muted-foreground mb-6">
                 Мы предоставляем профессиональные услуги эвакуации автомобилей с 2015 года. 
                 За это время мы заслужили доверие тысяч клиентов благодаря надежности, 
                 оперативности и профессионализму наших сотрудников.
@@ -129,62 +129,62 @@ export default function ServicesSection() {
       <section id="pricing" className="py-20 bg-muted" aria-label="Цены на эвакуацию">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-secondary mb-4">Прайс-лист</h2>
-            <p className="text-muted-foreground text-lg">Прозрачные цены на все виды услуг</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-secondary mb-4">Прайс-лист</h2>
+            <p className="text-muted-foreground text-base sm:text-lg">Прозрачные цены на все виды услуг</p>
           </div>
           <div className="max-w-4xl mx-auto space-y-4">
             <Card>
               <CardContent className="p-6">
-                <div className="flex justify-between items-center">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
                   <div>
-                    <h3 className="font-semibold text-lg">Эвакуация легкового авто (в черте города)</h3>
+                    <h3 className="font-semibold text-base sm:text-lg">Эвакуация легкового авто (в черте города)</h3>
                     <p className="text-muted-foreground text-sm">До 5 км включительно</p>
                   </div>
-                  <div className="text-2xl font-bold text-primary">от 2000 ₽</div>
+                  <div className="text-xl sm:text-2xl font-bold text-primary whitespace-nowrap">от 2000 ₽</div>
                 </div>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6">
-                <div className="flex justify-between items-center">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
                   <div>
-                    <h3 className="font-semibold text-lg">Эвакуация внедорожника</h3>
+                    <h3 className="font-semibold text-base sm:text-lg">Эвакуация внедорожника</h3>
                     <p className="text-muted-foreground text-sm">До 5 км включительно</p>
                   </div>
-                  <div className="text-2xl font-bold text-primary">от 2500 ₽</div>
+                  <div className="text-xl sm:text-2xl font-bold text-primary whitespace-nowrap">от 2500 ₽</div>
                 </div>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6">
-                <div className="flex justify-between items-center">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
                   <div>
-                    <h3 className="font-semibold text-lg">Эвакуация грузового авто</h3>
+                    <h3 className="font-semibold text-base sm:text-lg">Эвакуация грузового авто</h3>
                     <p className="text-muted-foreground text-sm">До 5 км включительно</p>
                   </div>
-                  <div className="text-2xl font-bold text-primary">от 4000 ₽</div>
+                  <div className="text-xl sm:text-2xl font-bold text-primary whitespace-nowrap">от 4000 ₽</div>
                 </div>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6">
-                <div className="flex justify-between items-center">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
                   <div>
-                    <h3 className="font-semibold text-lg">Межгород</h3>
+                    <h3 className="font-semibold text-base sm:text-lg">Межгород</h3>
                     <p className="text-muted-foreground text-sm">Стоимость за 1 км пути</p>
                   </div>
-                  <div className="text-2xl font-bold text-primary">от 50 ₽/км</div>
+                  <div className="text-xl sm:text-2xl font-bold text-primary whitespace-nowrap">от 50 ₽/км</div>
                 </div>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-6">
-                <div className="flex justify-between items-center">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
                   <div>
-                    <h3 className="font-semibold text-lg">Техпомощь на месте</h3>
+                    <h3 className="font-semibold text-base sm:text-lg">Техпомощь на месте</h3>
                     <p className="text-muted-foreground text-sm">Мелкий ремонт, подзарядка</p>
                   </div>
-                  <div className="text-2xl font-bold text-primary">от 1000 ₽</div>
+                  <div className="text-xl sm:text-2xl font-bold text-primary whitespace-nowrap">от 1000 ₽</div>
                 </div>
               </CardContent>
             </Card>
@@ -206,8 +206,8 @@ export default function ServicesSection() {
       <section id="order" className="py-20 bg-gradient-to-br from-primary via-primary to-secondary" aria-label="Связаться с нами">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Нужен эвакуатор?</h2>
-            <p className="text-white/90 text-xl mb-12">Свяжитесь с нами любым удобным способом — работаем круглосуточно!</p>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">Нужен эвакуатор?</h2>
+            <p className="text-white/90 text-base sm:text-lg md:text-xl mb-8 sm:mb-12">Свяжитесь с нами любым удобным способом — работаем круглосуточно!</p>
             
             <div className="grid md:grid-cols-2 gap-6">
               <a 
@@ -219,8 +219,8 @@ export default function ServicesSection() {
                     <div className="bg-primary/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                       <Icon name="Phone" size={40} className="text-primary" />
                     </div>
-                    <h3 className="text-2xl font-bold text-secondary mb-2">Позвонить</h3>
-                    <p className="text-3xl font-bold text-primary mb-3">+7 (993) 917-76-24</p>
+                    <h3 className="text-xl sm:text-2xl font-bold text-secondary mb-2">Позвонить</h3>
+                    <p className="text-2xl sm:text-3xl font-bold text-primary mb-3">+7 (993) 917-76-24</p>
                     <p className="text-muted-foreground">Звоните прямо сейчас</p>
                   </CardContent>
                 </Card>
@@ -237,8 +237,8 @@ export default function ServicesSection() {
                     <div className="bg-[#25D366]/10 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 group-hover:bg-[#25D366]/20 transition-colors">
                       <Icon name="MessageCircle" size={40} className="text-[#25D366]" />
                     </div>
-                    <h3 className="text-2xl font-bold text-secondary mb-2">WhatsApp</h3>
-                    <p className="text-xl font-semibold text-[#25D366] mb-3">Написать в мессенджер</p>
+                    <h3 className="text-xl sm:text-2xl font-bold text-secondary mb-2">WhatsApp</h3>
+                    <p className="text-base sm:text-xl font-semibold text-[#25D366] mb-3">Написать в мессенджер</p>
                     <p className="text-muted-foreground">Ответим моментально</p>
                   </CardContent>
                 </Card>
