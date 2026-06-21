@@ -43,7 +43,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
           </div>
           <div className="hidden md:block">
             <img 
-              src="https://cdn.poehali.dev/projects/93bf9bc9-b4bd-4203-8b44-15199a552ff4/files/37d98ee8-dbb7-407d-b16f-b305ed72af7f.jpg" 
+              src="https://cdn.poehali.dev/projects/93bf9bc9-b4bd-4203-8b44-15199a552ff4/bucket/5327d40c-0b52-49d7-a209-c2a05dea3e56.png" 
               alt="Эвакуатор для легковых автомобилей Москва - профессиональная эвакуация седанов и хэтчбеков" 
               className="rounded-lg shadow-2xl"
               loading="eager"
